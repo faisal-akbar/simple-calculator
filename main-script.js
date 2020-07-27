@@ -1,25 +1,25 @@
 // get history
 function getHistory() {
-    return document.getElementById('history-value').value;
+    return document.getElementById('history-value').innerText;
 }
 // alert(getHistory());
 
 // Print History
 function printHistory(num) {
-    document.getElementById('history-value').value = num;
+    document.getElementById('history-value').innerText = num;
 }
 // printHistory('99+2')
 
 function getOutput() {
-    return document.getElementById('output-value').value;
+    return document.getElementById('output-value').innerText;
 }
 // Print Output
 function printOutput(num) {
-    // document.getElementById('output-value').value = num;
+    // document.getElementById('output-value').innerText = num;
     if (num == "") {
-        document.getElementById('output-value').value = num;
+        document.getElementById('output-value').innerText = num;
     } else {
-        document.getElementById('output-value').value = getFormattedNumber(num);
+        document.getElementById('output-value').innerText = getFormattedNumber(num);
     }
 
 }
