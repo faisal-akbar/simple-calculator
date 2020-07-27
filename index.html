@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="calculator card">
+
+        <input type="text" id="history-value" class="calculator-screen z-depth-1" value="" disabled />
+        <input type="text" id="output-value" class="calculator-screen z-depth-1" value="" disabled />
+
+        <div class="calculator-keys">
+
+            <button type="button" class="operator btn btn-info" id="clear">C</button>
+            <button type="button" class="operator btn btn-info" id="backspace">CE</button>
+            <button type="button" class="operator btn btn-info" id="%">%</button>
+            <button type="button" class="operator btn btn-info" id="/">&#247;</button>
+
+            <button type="button" class="number btn btn-light " id="7">7</button>
+            <button type="button" class="number btn btn-light " id="8">8</button>
+            <button type="button" class="number btn btn-light" id="9">9</button>
+            <button type="button" class="operator btn btn-info" id="*">&times;</button>
+
+            <button type="button" class="number btn btn-light" id="4">4</button>
+            <button type="button" class="number btn btn-light" id="5">5</button>
+            <button type="button" class="number btn btn-light" id="6">6</button>
+            <button type="button" class="operator btn btn-info" id="-">-</button>
+
+            <button type="button" class="number btn btn-light" id="1">1</button>
+            <button type="button" class="number btn btn-light" id="2">2</button>
+            <button type="button" class="number btn btn-light" id="3">3</button>
+            <button type="button" class="operator btn btn-info" id="+">+</button>
+
+            <button type="button" class="number btn btn-light" id="0">0</button>
+            <button type="button" class="operator btn btn-secondary" id=".">.</button>
+            <button type="button" class="equal-sign operator btn btn-primary" id="=">=</button>
+
+        </div>
+    </div>
+    <script src="main-script.js"></script>
+</body>
+
+</html>
